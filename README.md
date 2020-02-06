@@ -12,3 +12,17 @@ At this time, you need to
 4. Save in the same folder as this program as "classes.json"
 
 Simple, right? By doing this, you will officially be a Banner Hacker.
+
+## Downloading
+
+See [releases](https://github.com/trucsclub/ClassVisitSignupGenerator/releases).
+
+## Building
+
+You will need the .NET 3.1 SDK (or higher).
+
+To build from the command line, run ``dotnet build``. This will generate a debug build.
+
+To run what you just built, cd into the project directory and run ``dotnet run``.
+
+To publish, specifically in a single-binary release, run ``dotnet publish -r {RID} -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true``. Replace ``{RID}`` with the [runtime identifier](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog) of the platform you are targetting. For example, for 64-bit Windows use ``win-x64``. 
