@@ -11,7 +11,7 @@ namespace ClassVisitSignupGenerator
     {
         static void Main(string[] args)
         {
-            //At this time, you need to go to "Browse classes", open the Network inspector, search for COMP, and open it in a new URL. Edit "pageMaxSize" to something like 150. Then save in the same folder as "classes.json"
+            //see README.md for info on how to get this file
             var file = File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "classes.json"));
 
             var data = JsonConvert.DeserializeObject<BaseObject>(file);
